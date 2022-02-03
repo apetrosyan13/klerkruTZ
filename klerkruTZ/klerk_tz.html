@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<title>HTML Tutorial FPJ</title>
+<body>
+    <div>
+        <header>
+            <div class='logo_container'>
+                <img class='logo' src='utils/logo.png' alt="logo"/>
+                <img class='logo_skrep' src='utils/logo_skrep.png'/>
+            </div>
+            <nav>
+                <span class='nav_text'>
+                    Хлебные крошки
+                </span>
+                <span class='right_arrow'>→</span>
+                <span class='nav_text'>
+                    Хлебные крошки
+                </span>
+                <span class='right_arrow'>→</span>
+                <span class='nav_text'>
+                    Хлебные крошки
+                </span>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1 class='main_title'>
+                    Подписки «Клерка»
+                </h1>
+            </div>
+            <div class='page_selector_container'>
+                <span class='page_selector' chacked='true'>
+                    Рассылки
+                </span>
+                <span class='page_selector'>
+                    Соцсети
+                </span>
+                <span class='page_selector'>
+                    Мессенджеры
+                </span>
+            </div>
+            <div class='main_content'>
+                <p class='content_selector_title'>Выберите рассылки, которые подходят именно вам</p>
+                <div class='input_container'>
+                    <input type='mail' class='mail_input' placeholder="Электронная почта"/>
+                    <button id='shareBtn' class='input_share_btn'>Подписаться</button>
+                </div>
+                <div class='checkbox_container'>
+                    <label  id='allSelectors' class="checkbox">
+                        <span  id='allSelectorsSwitch' chacked='false' class="checkbox_switch"></span>
+                    </label>
+                    <span class='checkbox_text'>Подписаться на все рассылки</span>
+                </div>
+                <div class='card_container'>
+                    <div class='card'>
+                        <div class='card_content'>
+                            <div class='card_timing'>Перед рассветом</div>
+                            <div class='card_title'>Утренний бухгалтер</div>
+                            <div class='card_info'>Самые важные новости и события за день.<br/> Кратко, по делу, структурировано.</div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Новости для бухгалтеров, ИП и директора</div>
+                            </div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Подборка статей за день</div>
+                            </div>
+                            <div class='card_toggle'>
+                                <label  id='firstCard' class="card_checkbox">
+                                    <span  id='firstCardSwitch' chacked='true' class="card_checkbox_switch"></span>
+                                </label>
+                                <span class='card_subscribers_count'>Уже получает 59 342 человек</span>
+                            </div>
+                        </div>
+                        <img src='utils/cardImg1.png'alt='cardImage'class='cardImg'/>
+                    </div>
+                    <div class='card'>
+                        <div class='card_content'>
+                            <div class='card_timing'>После заката</div>
+                            <div class='card_title'>Ночной бухгалтер</div>
+                            <div class='card_info'>Самая краткая газета о налогах и бухучете в <br/> мире — современная рассылка для чтения.</div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Анализ, оценка и только самое главное</div>
+                            </div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Лучшие комменты юзеров в обзоре</div>
+                            </div>
+                            <div class='card_toggle'>
+                                <label  id='secondCard' class="card_checkbox">
+                                    <span  id='secondCardSwitch' chacked='false' class="card_checkbox_switch"></span>
+                                </label>
+                                <span class='card_subscribers_count'>Уже получает 37 400 человек</span>
+                            </div>
+                        </div>
+                        <img src='utils/cardImg2.png'alt='cardImage'class='cardImg'/>
+                    </div>
+                    <div class='card'>
+                        <div class='card_content'>
+                            <div class='card_timing'>Раз в две недели</div>
+                            <div class='card_title'>Ножницы скидок</div>
+                            <div class='card_info'>Подборка самых выгодных и полезных <br/> спецпредложений от надежных компаний.</div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Акции и скидки от лидеров рынка</div>
+                            </div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Те, кто подписался – экономят много денег </div>
+                            </div>
+                            <div class='card_toggle'>
+                                <label  id='thirdCard' class="card_checkbox">
+                                    <span  id='thirdCardSwitch' chacked='false' class="card_checkbox_switch"></span>
+                                </label>
+                                <span class='card_subscribers_count'>Уже получает 92 118 человек</span>
+                            </div>
+                        </div>
+                        <img src='utils/cardImg3.png'alt='cardImage'class='cardImg'/>
+                    </div>
+                    <div class='card'>
+                        <div class='card_content'>
+                            <div class='card_timing'>По мере появления анонсов</div>
+                            <div class='card_title'>Чемодан вебинаров</div>
+                            <div class='card_info'>Подборка с анонсами бесплатных вебинаров <br/> на самые топовые темы при участии экспертов.</div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Никогда не пришлем платные вебинары</div>
+                            </div>
+                            <div class='card_options'>
+                                <img src='utils/optionImg.png'/>
+                                <div class='card_option_name'>Подборка топовых тем для вебинаров</div>
+                            </div>
+                            <div class='card_toggle'>
+                                <label  id='fourthCard' class="card_checkbox">
+                                    <span  id='fourthCardSwitch' chacked='false' class="card_checkbox_switch"></span>
+                                </label>
+                                <span class='card_subscribers_count'>Уже получает 92 082 человек</span>
+                            </div>
+                        </div>
+                        <img src='utils/cardImg4.png'alt='cardImage'class='cardImg'/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer><img src='utils/smile.png'/></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
