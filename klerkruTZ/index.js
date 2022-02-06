@@ -60,6 +60,7 @@ function shareBtnOnClck() {
     shareBtn.style.backgroundColor = '#6ff16f';
     shareBtn.innerHTML = '';
     shareBtn.appendChild(checkImg);
+    shareBtn.disabled = true;
 
     }
 
