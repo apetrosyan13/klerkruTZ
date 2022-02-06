@@ -47,7 +47,7 @@ function contentSelectorOnClick(e) {
 
 
 
-function shareBtnOnClck() {
+function shareBtnOnClick() {
     let mailInput = document.getElementById('mailInput');
     let screenWidth = window.screen.width;
     let checkImg = document.createElement('img');
